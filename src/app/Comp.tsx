@@ -11,7 +11,7 @@ async function getAsd(){
 export default function Comp(){
     return(
         <div>
-            <button onClick={()=>getAsd()} className="text-white">click</button>
+            <button onClick={()=>getAsd()}>click</button>
         </div>
     )
 }
