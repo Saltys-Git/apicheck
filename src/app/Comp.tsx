@@ -5,7 +5,7 @@ import {asdCall} from "../../lib/api";
 
 async function getAsd(){
     const asd = await asdCall()
-    console.log(asd.iat)
+    console.log(asd)
 }
 
 export default function Comp(){
