@@ -44,5 +44,5 @@ const createJWT = (prop: any) => {
         .setExpirationTime(exp)
         .setIssuedAt(iat)
         .setNotBefore(iat)
-        .sign(new TextEncoder().encode(process.env.NEXT_PUBLIC_public_encode_key));
+        .sign(new TextEncoder().encode("asdasd"));
 };

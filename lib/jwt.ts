@@ -10,14 +10,14 @@ export const createJWT = (prop: any) => {
         .setExpirationTime(exp)
         .setIssuedAt(iat)
         .setNotBefore(iat)
-        .sign(new TextEncoder().encode(process.env.JWT_SECRET));
+        .sign(new TextEncoder().encode("asdasd"));
 };
 
 
 export const validateJWT = async (jwt : string) => {
     const { payload } = await jwtVerify(
         jwt,
-        new TextEncoder().encode(process.env.JWT_SECRET)
+        new TextEncoder().encode("asdasd")
     );
 
     return payload.payload;
